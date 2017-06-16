@@ -42,8 +42,9 @@ http://api.openweathermap.org/data/2.5/weather?q=[ZIP CODE GOES HERE],us?units=i
     - This function has the zip code as a parameter.
     - It will construct the url you will use for your Ajax call.
       ***HINT:***
-      > The url will look something like: http://api.openweathermap.org/data/2.5/weather?q=[ZIP CODE GOES HERE],us?units=imperial&appid=[PUT YOUR API KEY HERE]
-
+      ```
+      The url will look something like: http://api.openweathermap.org/data/2.5/weather?q=[ZIP CODE GOES HERE],us?units=imperial&appid=[PUT YOUR API KEY HERE]
+      ```
     - Then it will preform an AJAX GET request and invoke `getData()` with the response data.
 3. **Finish the `getData()` function**
     - This function will take the response data and grab the following:
@@ -73,3 +74,7 @@ http://api.openweathermap.org/data/2.5/weather?q=[ZIP CODE GOES HERE],us?units=i
     - Have the temperature turn blue if under 40, and red if above 90.
     - Look into the [javascript date object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) and change the background color based on the time of day.
 - Look into [Font Awesome](http://fontawesome.io/) and add icons based on the weather.
+
+## Submission
+
+Homework is due by **11:00 Sunday**! Remember to work with each other and go to TAs when you need it, but follow the [guidelines](https://git.generalassemb.ly/wdi-nyc-5-22/course-information/blob/master/how-to-queue-with-TAs.md) for queuing. Follow the normal [rules for homework submission](https://git.generalassemb.ly/wdi-nyc-5-22/course-information/blob/master/homework-policy.md), remember to include a link to your **repo**.
