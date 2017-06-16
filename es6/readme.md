@@ -1,8 +1,9 @@
 ## ES6 Practice!
 
+![](https://derickbailey.com/wp-content/uploads/2015/08/arrow-functions.jpg)
 
 #### Prompt:
-For all the questions below, answer with the shortest possible ES6 solution.
+For all the questions below, answer with the shortest possible ES6 solution. Record your answers in `script.js` within the es6 directory.
 
 
 #### Problems:
