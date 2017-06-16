@@ -9,12 +9,6 @@ var stringSplit = function(phrase){ 
 console.log(stringSplit('hello world'))
 
 
-
-
-
-
-
-
 //////////////////////////////////////////////////////////////////
 // 2. Use the data set below to answer the following 3 questions:
 
@@ -50,10 +44,6 @@ var names = myBesties.map(function(friend) {
 console.log(names)
 
 
-
-
-
-
 // Using ES6, return an array of objects that includes only friends that are "wizard-human".
 
 
@@ -70,17 +60,10 @@ function sayEveryOther() {
 
 sayEveryOther()
 
-
-
-
-
-
-
 //////////////////////////////////////////////////////////////////
 // 3. Refactor the code below into es6:
 
 var queryButton = document.getElementById('submit-query');
-
 
 queryButton.addEventListener('click', function(e) {
   var userInput = document.getElementById('character-name-input').value;
@@ -97,5 +80,4 @@ queryButton.addEventListener('click', function(e) {
     var newText = document.createTextNode(JSON.stringify(resultData));
     resultDisplay.appendChild(newText);
   });
-
 })

@@ -4,15 +4,15 @@ $(()=>{
 
   });
 
-  const makeCall = (zipcode)=>{
+  function makeCall(zipcode){
 
   }
 
-  const getData = (responseData)=>{
+  function getData(responseData){
 
   }
 
-  const appendToDom = (city, currentTemp, description, minTemp, maxTemp)=>{
+  function appendToDom(city, currentTemp, description, minTemp, maxTemp){
 
   }
 
