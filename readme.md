@@ -1,16 +1,6 @@
-# ES6 & Ajax
+# Ajax Weather!
 
 ![](https://media.giphy.com/media/za5xikuRr0OzK/giphy.gif)
-
-## Completion
-
-Parts 1 & 2
-
-## Part 1 - ES6 Practice
-
-Follow the instructions in the [ES6 readme](./es6/readme.md). Record your solutions in the `script.js` file in the `es6` directory.
-
-## Part 2 - Building a weather app!
 
 Here's an exciting challenge: You'll be building a small weather app, using your newfound skills with APIs!
 
