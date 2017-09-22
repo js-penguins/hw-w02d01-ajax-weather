@@ -1,6 +1,6 @@
-$(()=>{
+$(function(){
 
-  $('#submit').on('click', (e)=>{
+  $('#submit').on('click', function(event){
 
   });
 
