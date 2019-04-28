@@ -1,3 +1,5 @@
+# PART 0: [Vote for what you want to learn Tuesday!](https://forms.gle/G1qGvcVJ5R8tjJa56)
+
 # PART 1: Project Proposal!
 
 The API you choose for your app is going to be a huge part of your project. Making sure you find the right one is essential. Tonight research different APIs and think about what you want to do. MAKE SURE TO TEST OUT YOUR API END POINT!!! You don't want to run into any surprises about what data you will be getting back. Open up an issue on [the final project repo](https://github.com/js-penguins/JS-final-project) with:
