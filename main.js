@@ -2,10 +2,10 @@
    $(document).ready(function(){
 	    $('button').on('click', function(){
 	        var zip = parseInt($('#zip').val())
-	        makeCall(zip)
+	        findBy(zip)
 	    })
         
-	    function makeCall(zip){
+	    function findBy(zip){
 	        fetch(`api.openweathermap.org/data/2.5/weather?zip=94040,us=089b67313004f5615592a221f0907b7d`)
 	        .then((res) => {
 	            return res.json()
