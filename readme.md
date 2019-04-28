@@ -1,4 +1,16 @@
-# Ajax Weather!
+# PART 1: Project Proposal!
+
+The API you choose for your app is going to be a huge part of your project. Making sure you find the right one is essential. Tonight research different APIs and think about what you want to do. MAKE SURE TO TEST OUT YOUR API END POINT!!! You don't want to run into any surprises about what data you will be getting back. Open up an issue on [the final project repo]() with:
+
+- Name of your app
+- What the app will do?
+- What API will you use? Include:
+    - a link to the documentation
+    - an example endpoint
+    - what data will you use from it?
+- Anything else that will help us understand what you are creating!
+
+# PART 2: Ajax Weather!
 
 ![](https://media.giphy.com/media/za5xikuRr0OzK/giphy.gif)
 
@@ -23,10 +35,22 @@ http://api.openweathermap.org/data/2.5/weather?q=[ZIP CODE GOES HERE],us?units=i
 
 ## Assignment
 
-1. **Complete the event listener**
+- The user types a zip code into the input and presses the search button
+- You get the value of the input and make a request to the API for the weather information at that location.
+- Get the necessary data from the API response. You will need the:
+    - City name
+    - Current temperature
+    - Weather description
+    - Min temp
+    - Max temp
+- Render the result to the DOM
+
+### Optional Walk-through 
+
+1. **Make an event listener**
     - When the submit button is clicked, get value of the input.
-    - Then invoke the `makeCall()` function with the zip code as an argument.
-2. **Fill in the `makeCall()` function**
+    - Then invoke a `makeCall()` function with the zip code as an argument.
+2. **Create the `makeCall(zipcode)` function**
     - Look at the [Open Weather API Documentation](https://openweathermap.org/current#zip)
     - This function has the zip code as a parameter.
     - It will construct the url you will use for your Ajax call.
@@ -34,8 +58,8 @@ http://api.openweathermap.org/data/2.5/weather?q=[ZIP CODE GOES HERE],us?units=i
       ```
       The url will look something like: http://api.openweathermap.org/data/2.5/weather?q=[ZIP CODE GOES HERE],us?units=imperial&appid=[PUT YOUR API KEY HERE]
       ```
-    - Then it will preform an AJAX GET request and invoke `getData()` with the response data.
-3. **Finish the `getData()` function**
+    - Then it will preform an AJAX GET request and invoke `parseData()` with the response data.
+3. **Make the `parseData()` function**
     - This function will take the response data and grab the following:
         - City name
         - Current temperature
@@ -43,9 +67,9 @@ http://api.openweathermap.org/data/2.5/weather?q=[ZIP CODE GOES HERE],us?units=i
         - Min temp
         - Max temp
     - It will then pass these as arguments when invoking the `appendToDom()` function.
-4. **Complete the `appendToDom()` function**
-    - This function will take each of these parameters and create appropriate elements for each.
-    - It will then append the elements to the DOM.
+4. **Create the `appendToDom()` function**
+    - This function will take each of the data properties from parseData as parameters.
+    - It will then create and append the elements to the DOM to display the information.
 
 **Here are some zip codes to test!**
 - 99501 (Anchorage)
@@ -66,4 +90,4 @@ http://api.openweathermap.org/data/2.5/weather?q=[ZIP CODE GOES HERE],us?units=i
 
 ## Submission
 
-Homework is due by **tonight at midnight**
+Homework is due by **tonight at 2am**. Follow the [usual submission process](https://github.com/js-penguins/homework-submission).
