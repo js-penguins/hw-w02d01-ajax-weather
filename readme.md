@@ -1,6 +1,6 @@
 # PART 1: Project Proposal!
 
-The API you choose for your app is going to be a huge part of your project. Making sure you find the right one is essential. Tonight research different APIs and think about what you want to do. MAKE SURE TO TEST OUT YOUR API END POINT!!! You don't want to run into any surprises about what data you will be getting back. Open up an issue on [the final project repo]() with:
+The API you choose for your app is going to be a huge part of your project. Making sure you find the right one is essential. Tonight research different APIs and think about what you want to do. MAKE SURE TO TEST OUT YOUR API END POINT!!! You don't want to run into any surprises about what data you will be getting back. Open up an issue on [the final project repo](https://github.com/js-penguins/JS-final-project) with:
 
 - Name of your app
 - What the app will do?
@@ -9,6 +9,8 @@ The API you choose for your app is going to be a huge part of your project. Maki
     - an example endpoint
     - what data will you use from it?
 - Anything else that will help us understand what you are creating!
+
+Not sure where to start? Try going to [the list of public APIs](https://github.com/toddmotto/public-apis) and finding one that sounds interesting!
 
 # PART 2: Ajax Weather!
 
