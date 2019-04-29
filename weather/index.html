@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-  <meta charset='UTF-8' />
-  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-  <meta http-equiv='X-UA-Compatible' content='ie=edge' />
-  <title>Weather Search</title>
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <link rel='stylesheet' type='text/css' href='./style.css'>
-  <script src="./jquery.js"></script>
-  <script src="./script.js"></script>
+ <meta charset='UTF-8' />
+ <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+ <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+ <title>Weather Search</title>
+ <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+ <link rel='stylesheet' type='text/css' href='./style.css'>
+ <script src="./jquery.js"></script>
+ <script src="./script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Weather app!</h1>
-  </header>
+ <header>
+   <h1>Weather app!</h1>
+ </header>
+<form>
   <div class="container">
     <div class="search-container">
       <label for="zipcode">Zip Code:</label>
@@ -21,7 +22,19 @@
       <button id="submit">Search</button>
     </div>
     <div id="result">
-    </div>
-  </div>
+</form>
+</div>
+</div>
+ <h1 id="name">Weather</h1>
+ <p>City name: <span id="cn"></span></p>
+ <p>Current temprature: <span id="temp"> </span></p>
+ <p>Weather description: <span id="Weather_description"> </span></p>
+ <p>Min Tempreature: <span id="min_temp"> </span></p>
+ <p>Max Tempreature: <span id="max_temp"> </span></p>
+ <p>latitude: <span id="latitude"> </span></p>
+ <p>longitude: <span id="longitude"> </span></p>
+ <p>humidity: <span id="humidity"> </span></p>
+ <p>precipitation: <span id="precipitation"> </span></p>
+ <p>wind speed: <span id="wind_speed"> </span></p>
 </body>
 </html>
