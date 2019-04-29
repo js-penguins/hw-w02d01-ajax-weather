@@ -1,64 +1,37 @@
-*{
-  font-family: sans-serif;
-  color: darkslateblue;
-  font-family: 'Quicksand', sans-serif;
-}
-body,html{
-  margin: 0 auto;
-  background-color: cornflowerblue;
-  text-align: center;
-}
+$(document).ready(function () {
+    
+    // Get Location 
+    navigator.geolocation.getCurrentPosition(success, error);
 
-h1{
-  color: white;
-  font-size: 4em;
-  font-weight: light;
-}
+    function success(pos) {
+        var lat = pos.coords.latitude;
+        var long = pos.coords.longitude;
+        weather(lat, long);
+    }
 
-.container{
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  background-color: ghostwhite;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 20px;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  min-height: 100px;
-  border-radius: 10px;
-  box-shadow: 0 0 30px rgba(0,0,0,.3);
-}
+    function error() {
+        console.log('There was an error');
+    }
 
-.search-container{
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-align-items: center;
-  align-items: center;
-}
-input, button{
-  font-size: 1em;
-  padding: 7px;
-  margin: 0 0 0 10px;
-  border: 1px solid darkslateblue;
-  border-radius: 5px;
-}
+    // Call Weather
+    function weather(lat, long) {
+        var URL = `https://fcc-weather-api.glitch.me/api/current?lat=${lat}&lon=${long}`;
 
-button{
-  background-color: aliceblue;
-}
-button:hover{
-  background-color: gold;
-}
+        $.getJSON(URL, function(data) {
+            updateDOM(data);
+        });
+    }
+
+    // Update Dom
+    function updateDOM(data) {
+        var city = data.name;
+        var temp = Math.round(data.main.temp_max);
+        var desc = data.weather[0].description;
+        var icon = data.weather[0].icon;
+
+        $('#city').html(city);
+        $('#temp').html(temp);
+        $('#desc').html(desc);
+        $('#icon').attr('src', icon);
+    }
+});س
