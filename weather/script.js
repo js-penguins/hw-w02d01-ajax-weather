@@ -7,13 +7,13 @@ $(document).ready(function(){
         event.preventDefault();
         var zipCode = $('input').val();
  
-        console.log("work");
+        console.log(zipCode);
         $.ajax({
             method: 'GET',
-            url: 'http://api.openweathermap.org/data/2.5/weather?zip='+zipCode+',us&units=imperial&appid=2237f8564ff7a990cd8be6ffbf574930',
+            url: 'http://api.openweathermap.org/data/2.5/weather?zip='+zipCode+',us&appid=2237f8564ff7a990cd8be6ffbf574930',
             success: function (result) {
                 console.log(result);
-                $('#cn').text(+result.cn);
+                $('#cn').text(result.name);
                 $('#temp').text(result.main.temp);
                 $('#Weather_description').text(result.weather[0].description);
                 $('#min_temp').text(result.main.temp_min);
